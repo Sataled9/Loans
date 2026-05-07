@@ -1,0 +1,153 @@
+:root {
+  --main-color: rgb(1, 36, 186);
+  --accent-color: rgb(9, 216, 98);
+  --text-color: rgb(53, 53, 53);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Images/background.jpg);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 80px;
+}
+
+.logo-container a {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.logo-container {
+    align-content: center;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+} 
+
+.menu-list a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*                main                */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); 
+} 
+ 
+.main__container {
+   display: flex; 
+   justify-content: space-between;
+   width: 100%;
+ /*   max-width: 1100px;
+   margin: 0 auto; */
+} 
+
+.main_text p {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.main_text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.icons__item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    color: var(--accent-color);
+   
+}
+
+.icons__item {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.icons__item p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.icons__item:nth-child(1)::before { content: "\f0c2"; }
+.icons__item:nth-child(2)::before { content: "\f3d1"; }
+.icons__item:nth-child(3)::before { content: "\f2f2"; }
+
+
+
+.main_left__container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+    padding: 30px;
+}
+
+.main_left__container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0 40px 0;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="name"] {
+     font-size: 0.8rem;
+     font-weight: 600;
+     padding: 0 0 0 8px;
+}
+
+input[type="submit"] {
+    margin: 40px 0 0 0;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.main_form input {
+    border: none;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
