@@ -28,6 +28,7 @@ body {
     font-weight: 700;
     color: var(--main-color);
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 .logo-container {
@@ -44,6 +45,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     gap: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 } 
 
 .menu-list a {
@@ -114,7 +117,7 @@ main {
 .main_left__container {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 10px;
     border: none;
     background-color: white;
     padding: 30px;
@@ -130,12 +133,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
-/* input[type="name"] {
-     font-size: 0.8rem;
-     font-weight: 600;
-     padding: 0 0 0 8px;
-} */
 
 input[type="submit"] {
     align-self: flex-start;
@@ -167,6 +164,7 @@ input[name="name"] {
     padding-bottom: 8px;
 }
 
+
 input[name="number"] {
     padding-top: 12px;
     padding-bottom: 8px;
@@ -175,6 +173,7 @@ input[name="number"] {
 
 .main_form label {
     margin-bottom: 8px;
+    font-weight: 800;
 }
 
 .main_form input {
